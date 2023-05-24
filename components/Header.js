@@ -16,24 +16,8 @@ const Header = () => {
             <Link href='#'>Profile</Link>
           </li>
         )}
-        <li>
-          {!session && (
-            <Modal
-              classes={"cursor-pointer "}
-              label='Login'>
-              <Loginform />
-            </Modal>
-          )}
-        </li>
-        <li>
-          {!session && (
-            <Modal
-              classes={"cursor-pointer "}
-              label='Register'>
-              <RegisterForm />
-            </Modal>
-          )}
-        </li>
+        <li>{!session && <Link href={"/login"}>Login</Link>}</li>
+        <li>{!session && <Link href={"/register"}>Register</Link>}</li>
         {session && (
           <li>
             <button onClick={() => signOut()}>Logout</button>

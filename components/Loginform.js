@@ -33,6 +33,7 @@ export default function Loginform() {
       <form className='mt-8 mb-2 w-80 mx-auto max-w-screen-lg sm:w-96'>
         <div className='mb-4 flex flex-col gap-6'>
           <Input
+            color='green'
             type='email'
             name='email'
             value={email}
@@ -41,6 +42,7 @@ export default function Loginform() {
             label='Email'
           />
           <Input
+            color='green'
             name='passowrd'
             value={passowrd}
             onChange={(e) => setPassword(e.target.value)}
@@ -51,6 +53,7 @@ export default function Loginform() {
         </div>
 
         <Button
+          color='green'
           onClick={handleSubmit}
           className='mt-6'
           fullWidth>

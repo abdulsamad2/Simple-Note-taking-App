@@ -36,6 +36,7 @@ export default function RegisterForm() {
       <form className='mt-8 mb-2 w-80 mx-auto max-w-screen-lg sm:w-96'>
         <div className='mb-4 flex flex-col gap-6'>
           <Input
+            color='green'
             value={email}
             name='email'
             onChange={(e) => setEmail(e.target.value)}
@@ -43,6 +44,7 @@ export default function RegisterForm() {
             label='Email'
           />
           <Input
+            color='green'
             type='password'
             name='password'
             value={password}
@@ -53,6 +55,7 @@ export default function RegisterForm() {
         </div>
 
         <Button
+          color='green'
           onClick={handleSubmit}
           className='mt-6'
           fullWidth>
